@@ -1,0 +1,103 @@
+.card {
+  background-color: var(--very-dark-blue-card-bg);
+  font-size: var(--font-size);
+  padding: 1.5rem;
+  padding-bottom: 2rem;
+  border-radius: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  max-width: 350px;
+
+  &__picture {
+    position: relative;
+  }
+
+  &__img {
+    width: 100%;
+    border-radius: 0.5rem;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 99%;
+    display: grid;
+    place-content: center;
+    background-color: rgba(var(--cyan-rgb), 0.5);
+    opacity: 0;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  &__title {
+    color: var(--white);
+    font-size: 1.4rem;
+    margin: 1rem 0;
+    font-weight: 600;
+    cursor: pointer;
+
+    &:hover {
+      color: var(--cyan);
+    }
+  }
+
+  &__text {
+    font-weight: 300;
+    margin-bottom: 1rem;
+    line-height: 1.5rem;
+  }
+
+  &__eth {
+    color: var(--cyan);
+    font-weight: 600;
+    &::before {
+      content: url('../../images/icon-ethereum.svg');
+      vertical-align: middle;
+    }
+  }
+  &__time {
+    margin-left: auto;
+    &::before {
+      content: url('../../images/icon-clock.svg');
+      vertical-align: middle;
+    }
+  }
+
+  &__avatar {
+    width: 2rem;
+    height: 2rem;
+    vertical-align: middle;
+    border: 1px solid var(--white);
+    border-radius: 100%;
+    margin-right: 1rem;
+  }
+
+  &__line {
+    width: 100%;
+    margin: 1rem 0;
+    border: none;
+    border-top: 0.5px solid var(--very-dark-blue-line);
+  }
+
+  &__created {
+    color: var(--white);
+    text-decoration: none;
+    &:hover {
+      color: var(--cyan);
+    }
+  }
+
+  @media screen and (min-width: 400px) {
+    &__text {
+      font-weight: 300;
+      margin-bottom: 1rem;
+      line-height: 1.8rem;
+      font-size: 18px;
+    }
+  }
+}

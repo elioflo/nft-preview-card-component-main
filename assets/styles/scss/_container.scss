@@ -1,0 +1,9 @@
+.container {
+  font-family: 'Outfit', sans-serif;
+  min-height: 100vh;
+  display: grid;
+  padding: 0 1.5rem;
+  place-content: center;
+  background-color: var(--very-dark-blue-main-bg);
+  color: var(--soft-blue)
+}
