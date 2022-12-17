@@ -37,7 +37,7 @@
   &__title {
     color: var(--white);
     font-size: 1.4rem;
-    margin: 1rem 0;
+    margin: 1.2rem 0;
     font-weight: 600;
     cursor: pointer;
 
@@ -94,10 +94,13 @@
 
   @media screen and (min-width: 400px) {
     &__text {
-      font-weight: 300;
-      margin-bottom: 1rem;
       line-height: 1.8rem;
       font-size: 18px;
     }
+
+    &__avatar {
+        width: 2.2rem;
+        height: 2.2rem;
+      }
   }
 }
