@@ -28,7 +28,6 @@
     background-color: rgba(var(--cyan-rgb), 0.5);
     opacity: 0;
     border-radius: 0.5rem;
-    cursor: pointer;
     &:hover {
       opacity: 1;
     }
@@ -39,10 +38,14 @@
     font-size: 1.4rem;
     margin: 1.2rem 0;
     font-weight: 600;
-    cursor: pointer;
 
     &:hover {
       color: var(--cyan);
+    }
+
+    & > a {
+      text-decoration: none;
+      color: inherit;
     }
   }
 
